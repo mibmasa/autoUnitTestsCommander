@@ -1,0 +1,50 @@
+﻿<Window x:Class="autoUnitTestsCommander2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:autoUnitTestsCommander2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Width="775" Height="410">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="UnitTest.dll Directory" Name="unitTestDirectry" Grid.Row="0" Grid.Column="0"/>
+        <Label Content="Tests" Name="tests" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="TestFilter" Name="testFilter" Grid.Row="2" Grid.Column="0"/>
+        <Label Content="Logger" Name="logger" Grid.Row="3" Grid.Column="0"/>
+        <Label Content="未使用1" Name="noneUse" Grid.Row="4" Grid.Column="0"/>
+        <Label Content="未使用2" Name="noneUse1" Grid.Row="5" Grid.Column="0"/>
+        <Label Content="未使用3" Name="noneUse2" Grid.Row="6" Grid.Column="0"/>
+        <Label Content="未使用4" Name="noneUse3" Grid.Row="7" Grid.Column="0"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Name="unitTestDirectryText" VerticalAlignment="Center" Width="auto"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Name="testsText" VerticalAlignment="Center" Width="auto"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Name="testFilterText" VerticalAlignment="Center" Width="auto"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Name="loggerText" VerticalAlignment="Center" Width="auto"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Name="noneText" VerticalAlignment="Center" Width="auto"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Name="noneText1" VerticalAlignment="Center" Width="auto"/>
+        <TextBox Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Name="noneText2" VerticalAlignment="Center" Width="auto"/>
+        <TextBox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" Name="noneText3" VerticalAlignment="Center" Width="auto"/>
+        <Button Content="dll Open" Grid.Row="8" Grid.Column="3" Width="auto" Name="open" Click="openButton_Click" />
+        <Button Content="Paset" Grid.Row="9" Grid.Column="3" Width="auto" Name="pasetButton" Click="pasetButton_Click"/>
+
+    </Grid>
+
+</Window>
